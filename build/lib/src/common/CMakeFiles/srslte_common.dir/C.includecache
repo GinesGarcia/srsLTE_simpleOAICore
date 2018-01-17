@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/include/srslte/common/threads.h
+pthread.h
+-
+stdint.h
+-
+sys/timerfd.h
+-
+unistd.h
+-
+stdio.h
+-
+
+/home/cdonato/srsLTE_simpleOAICore/lib/src/common/threads.c
+errno.h
+-
+pthread.h
+-
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+sys/types.h
+-
+srslte/common/threads.h
+/home/cdonato/srsLTE_simpleOAICore/lib/src/common/srslte/common/threads.h
+
+/home/cdonato/srsLTE_simpleOAICore/lib/src/common/version.c
+srslte/version.h
+/home/cdonato/srsLTE_simpleOAICore/lib/src/common/srslte/version.h
+
+/usr/local/include/srslte/config.h
+
+/usr/local/include/srslte/version.h
+srslte/config.h
+/usr/local/include/srslte/srslte/config.h
+

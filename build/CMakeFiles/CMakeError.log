@@ -1,0 +1,86 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1063684125/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1063684125.dir/build.make CMakeFiles/cmTryCompileExec1063684125.dir/build
+make[1]: Entering directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1063684125.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1063684125.dir/CheckSymbolExists.c.o   -c /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1063684125
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1063684125.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1063684125.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1063684125 -rdynamic 
+CMakeFiles/cmTryCompileExec1063684125.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1063684125] Error 1
+make: *** [cmTryCompileExec1063684125/fast] Error 2
+
+File /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1543027999/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1543027999.dir/build.make CMakeFiles/cmTryCompileExec1543027999.dir/build
+make[1]: Entering directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1543027999.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1543027999.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1543027999
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1543027999.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1543027999.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1543027999 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1543027999] Error 1
+make[1]: Leaving directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1543027999/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_ERROR_INCOMPATIBLE failed with the following output:
+Change Dir: /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2125760820/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2125760820.dir/build.make CMakeFiles/cmTryCompileExec2125760820.dir/build
+make[1]: Entering directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2125760820.dir/src.cxx.o
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -std=c++03 -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -DHAVE_ERROR_INCOMPATIBLE -mavx2   -Werror=incompatible-pointer-types -o CMakeFiles/cmTryCompileExec2125760820.dir/src.cxx.o -c /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: error: -Werror=incompatible-pointer-types: no option -Wincompatible-pointer-types
+make[1]: *** [CMakeFiles/cmTryCompileExec2125760820.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2125760820/fast] Error 2
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_VISIBILITY_HIDDEN failed with the following output:
+Change Dir: /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2100801840/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2100801840.dir/build.make CMakeFiles/cmTryCompileExec2100801840.dir/build
+make[1]: Entering directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2100801840.dir/src.cxx.o
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -std=c++03 -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -DHAVE_VISIBILITY_HIDDEN  -march=native -Wall -Wno-comment -Wno-write-strings -Wno-format-extra-args -Winline -Wno-unused-result -Wno-format -std=c99 -D_GNU_SOURCE -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -Ofast -funroll-loops   -fvisibility=hidden -o CMakeFiles/cmTryCompileExec2100801840.dir/src.cxx.o -c /home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option '-std=c99' is valid for C/ObjC but not for C++ [enabled by default]
+Linking CXX executable cmTryCompileExec2100801840
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2100801840.dir/link.txt --verbose=1
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -std=c++03 -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -DHAVE_VISIBILITY_HIDDEN  -march=native -Wall -Wno-comment -Wno-write-strings -Wno-format-extra-args -Winline -Wno-unused-result -Wno-format -std=c99 -D_GNU_SOURCE -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -Ofast -funroll-loops    CMakeFiles/cmTryCompileExec2100801840.dir/src.cxx.o  -o cmTryCompileExec2100801840 -rdynamic 
+make[1]: Leaving directory `/home/cdonato/srsLTE_simpleOAICore/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
